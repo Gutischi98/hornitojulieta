@@ -3,10 +3,7 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url('background.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
+    background-color: black;
     color: #eee; /* off-white text */
     animation: fadeIn 1.5s ease-in;
 }
