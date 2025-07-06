@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Menú - Hornito de Julieta</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Roboto+Slab&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="menu-header">
+      <h1 class="menu-title">PIZZA<br />MENU</h1>
+      <nav>
+        <ul class="menu-nav">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="menu.html">Menú</a></li>
+          <li><a href="contact.html">Contacto</a></li>
+        </ul>
+      </nav>
+      <a href="https://www.instagram.com/hornitodejulieta/" target="_blank" rel="noopener noreferrer" class="btn-instagram">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" aria-hidden="true" style="width:20px; height:20px; vertical-align:middle; margin-right:8px;">
+                    <path d="M7.75 2h8.5A5.75 5.75 0 0122 7.75v8.5A5.75 5.75 0 0116.25 22h-8.5A5.75 5.75 0 012 16.25v-8.5A5.75 5.75 0 017.75 2zm0 1.5A4.25 4.25 0 003.5 7.75v8.5A4.25 4.25 0 007.75 20.5h8.5a4.25 4.25 0 004.25-4.25v-8.5A4.25 4.25 0 0016.25 3.5h-8.5zm4.25 3.25a4.5 4.5 0 110 9 4.5 4.5 0 010-9zm0 1.5a3 3 0 100 6 3 3 0 000-6zm4.75-.75a1.125 1.125 0 110 2.25 1.125 1.125 0 010-2.25z"/>
+                </svg>
+                Instagram
+            </a>
+    </header>
+
+    <main class="menu-main">
+      <section class="menu-section chef-pizzas">
+        <div class="section-card">
+          <h2 class="section-title">PIZZAS DEL CHEF</h2>
+          <div class="pizza-cards">
+            <div class="pizza-card" onclick="orderPizza('Campestre')">
+              <div class="card-image-container">
+                <img
+                  src="https://via.placeholder.com/200x150?text=Campestre"
+                  alt="Campestre"
+                />
+                <div class="favorite-icon">&#10084;</div>
+              </div>
+              <h3>Campestre</h3>
+              <p>Tocino, pollo, champiñon, aceituna</p>
+              <div class="price-rating">
+                <span class="price">$6.500</span>
+              </div>
+              <a
+                class="buy-button whatsapp"
+                href="https://wa.me/569888812341?text=Quiero%20pedir%20la%20pizza%20Campestre"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M20.52 3.48A11.94 11.94 0 0012 0C5.373 0 0 5.373 0 12a11.94 11.94 0 001.64 6.01L0 24l6.09-1.59A11.94 11.94 0 0012 24c6.627 0 12-5.373 12-12 0-3.2-1.25-6.21-3.48-8.52zM12 21.5a9.5 9.5 0 01-4.84-1.39l-.35-.22-3.61.94.96-3.52-.23-.36A9.5 9.5 0 1121.5 12c0 5.24-4.26 9.5-9.5 9.5zm5.2-7.3c-.28-.14-1.65-.81-1.9-.9-.25-.1-.43-.14-.62.14-.18.28-.7.9-.86 1.08-.16.18-.32.2-.6.07-.28-.14-1.18-.44-2.25-1.39-.83-.74-1.39-1.65-1.55-1.93-.16-.28-.02-.43.12-.57.12-.12.28-.32.42-.48.14-.16.18-.28.28-.46.1-.18.05-.34-.02-.48-.07-.14-.62-1.5-.85-2.05-.22-.54-.45-.47-.62-.48-.16-.01-.34-.01-.52-.01-.18 0-.48.07-.73.34-.25.28-.95.93-.95 2.27 0 1.34.98 2.64 1.12 2.82.14.18 1.93 2.94 4.68 4.12.65.28 1.16.45 1.56.58.65.21 1.24.18 1.71.11.52-.08 1.65-.67 1.88-1.32.23-.65.23-1.2.16-1.32-.07-.12-.25-.18-.53-.32z"
+                  />
+                </svg>
+                pedir
+              </a>
+            </div>
+            <div class="pizza-card" onclick="orderPizza('Vegetariano')">
+              <div class="card-image-container">
+                <img
+                  src="https://via.placeholder.com/200x150?text=Vegetariano"
+                  alt="Vegetariano"
+                />
+                <div class="favorite-icon">&#10084;</div>
+              </div>
+              <h3>Vegetariano</h3>
+              <p>Tomate cherry, mix pimientos, champiñon, aceituna, choclo</p>
+              <div class="price-rating">
+                <span class="price">$6.000</span>
+              </div>
+              <a
+                class="buy-button whatsapp"
+                href="https://wa.me/569888812341?text=Quiero%20pedir%20la%20pizza%20Vegetariano"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M20.52 3.48A11.94 11.94 0 0012 0C5.373 0 0 5.373 0 12a11.94 11.94 0 001.64 6.01L0 24l6.09-1.59A11.94 11.94 0 0012 24c6.627 0 12-5.373 12-12 0-3.2-1.25-6.21-3.48-8.52zM12 21.5a9.5 9.5 0 01-4.84-1.39l-.35-.22-3.61.94.96-3.52-.23-.36A9.5 9.5 0 1121.5 12c0 5.24-4.26 9.5-9.5 9.5zm5.2-7.3c-.28-.14-1.65-.81-1.9-.9-.25-.1-.43-.14-.62.14-.18.28-.7.9-.86 1.08-.16.18-.32.2-.6.07-.28-.14-1.18-.44-2.25-1.39-.83-.74-1.39-1.65-1.55-1.93-.16-.28-.02-.43.12-.57.12-.12.28-.32.42-.48.14-.16.18-.28.28-.46.1-.18.05-.34-.02-.48-.07-.14-.62-1.5-.85-2.05-.22-.54-.45-.47-.62-.48-.16-.01-.34-.01-.52-.01-.18 0-.48.07-.73.34-.25.28-.95.93-.95 2.27 0 1.34.98 2.64 1.12 2.82.14.18 1.93 2.94 4.68 4.12.65.28 1.16.45 1.56.58.65.21 1.24.18 1.71.11.52-.08 1.65-.67 1.88-1.32.23-.65.23-1.2.16-1.32-.07-.12-.25-.18-.53-.32z"
+                  />
+                </svg>
+                pedir
+              </a>
+            </div>
+            <div class="pizza-card" onclick="orderPizza('Texana')">
+              <div class="card-image-container">
+                <img
+                  src="https://via.placeholder.com/200x150?text=Texana"
+                  alt="Texana"
+                />
+                <div class="favorite-icon">&#10084;</div>
+              </div>
+              <h3>Texana</h3>
+              <p>Tocino, BBQ, queso mozzarella, cebolla morada, toque merken</p>
+              <div class="price-rating">
+                <span class="price">$6.500</span>
+              </div>
+              <a
+                class="buy-button whatsapp"
+                href="https://wa.me/569888812341?text=Quiero%20pedir%20la%20pizza%20Texana"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M20.52 3.48A11.94 11.94 0 0012 0C5.373 0 0 5.373 0 12a11.94 11.94 0 001.64 6.01L0 24l6.09-1.59A11.94 11.94 0 0012 24c6.627 0 12-5.373 12-12 0-3.2-1.25-6.21-3.48-8.52zM12 21.5a9.5 9.5 0 01-4.84-1.39l-.35-.22-3.61.94.96-3.52-.23-.36A9.5 9.5 0 1121.5 12c0 5.24-4.26 9.5-9.5 9.5zm5.2-7.3c-.28-.14-1.65-.81-1.9-.9-.25-.1-.43-.14-.62.14-.18.28-.7.9-.86 1.08-.16.18-.32.2-.6.07-.28-.14-1.18-.44-2.25-1.39-.83-.74-1.39-1.65-1.55-1.93-.16-.28-.02-.43.12-.57.12-.12.28-.32.42-.48.14-.16.18-.28.28-.46.1-.18.05-.34-.02-.48-.07-.14-.62-1.5-.85-2.05-.22-.54-.45-.47-.62-.48-.16-.01-.34-.01-.52-.01-.18 0-.48.07-.73.34-.25.28-.95.93-.95 2.27 0 1.34.98 2.64 1.12 2.82.14.18 1.93 2.94 4.68 4.12.65.28 1.16.45 1.56.58.65.21 1.24.18 1.71.11.52-.08 1.65-.67 1.88-1.32.23-.65.23-1.2.16-1.32-.07-.12-.25-.18-.53-.32z"
+                  />
+                </svg>
+                pedir
+              </a>
+            </div>
+            <div class="pizza-card" onclick="orderPizza('Pizza Doña Julieta')">
+              <div class="card-image-container">
+                <img
+                  src="https://via.placeholder.com/200x150?text=Pizza+Doña+Julieta"
+                  alt="Pizza Doña Julieta"
+                />
+                <div class="favorite-icon">&#10084;</div>
+              </div>
+              <h3>Pizza Doña Julieta</h3>
+              <p>
+                Pollo, camarón ecuatoriano, cebolla morada, albahaca salsa
+                blanca
+              </p>
+              <div class="price-rating">
+                <span class="price">$7.000</span>
+              </div>
+              <a
+                class="buy-button whatsapp"
+                href="https://wa.me/569888812341?text=Quiero%20pedir%20la%20pizza%20Pizza%20Doña%20Julieta"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M20.52 3.48A11.94 11.94 0 0012 0C5.373 0 0 5.373 0 12a11.94 11.94 0 001.64 6.01L0 24l6.09-1.59A11.94 11.94 0 0012 24c6.627 0 12-5.373 12-12 0-3.2-1.25-6.21-3.48-8.52zM12 21.5a9.5 9.5 0 01-4.84-1.39l-.35-.22-3.61.94.96-3.52-.23-.36A9.5 9.5 0 1121.5 12c0 5.24-4.26 9.5-9.5 9.5zm5.2-7.3c-.28-.14-1.65-.81-1.9-.9-.25-.1-.43-.14-.62.14-.18.28-.7.9-.86 1.08-.16.18-.32.2-.6.07-.28-.14-1.18-.44-2.25-1.39-.83-.74-1.39-1.65-1.55-1.93-.16-.28-.02-.43.12-.57.12-.12.28-.32.42-.48.14-.16.18-.28.28-.46.1-.18.05-.34-.02-.48-.07-.14-.62-1.5-.85-2.05-.22-.54-.45-.47-.62-.48-.16-.01-.34-.01-.52-.01-.18 0-.48.07-.73.34-.25.28-.95.93-.95 2.27 0 1.34.98 2.64 1.12 2.82.14.18 1.93 2.94 4.68 4.12.65.28 1.16.45 1.56.58.65.21 1.24.18 1.71.11.52-.08 1.65-.67 1.88-1.32.23-.65.23-1.2.16-1.32-.07-.12-.25-.18-.53-.32z"
+                  />
+                </svg>
+                pedir
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="menu-section classic-pizzas">
+        <h2 class="section-title">PIZZA CLASICAS</h2>
+        <div class="pizza-cards">
+          <div class="pizza-card" onclick="orderPizza('Margarita')">
+            <div class="card-image-container">
+              <img
+                src="https://via.placeholder.com/200x150?text=Margarita"
+                alt="Margarita"
+              />
+              <div class="favorite-icon">&#10084;</div>
+            </div>
+            <h3>Margarita</h3>
+            <p>Mozzarela, albahaca, tomate cherry</p>
+            <div class="price-rating">
+              <span class="price classic-price">$5.000</span>
+            </div>
+            <a
+              class="buy-button whatsapp"
+              href="https://wa.me/569888812341?text=Quiero%20pedir%20la%20pizza%20Margarita%20con%20mozzarela%20albahaca%20y%20tomate%20cherry"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  d="M20.52 3.48A11.94 11.94 0 0012 0C5.373 0 0 5.373 0 12a11.94 11.94 0 001.64 6.01L0 24l6.09-1.59A11.94 11.94 0 0012 24c6.627 0 12-5.373 12-12 0-3.2-1.25-6.21-3.48-8.52zM12 21.5a9.5 9.5 0 01-4.84-1.39l-.35-.22-3.61.94.96-3.52-.23-.36A9.5 9.5 0 1121.5 12c0 5.24-4.26 9.5-9.5 9.5zm5.2-7.3c-.28-.14-1.65-.81-1.9-.9-.25-.1-.43-.14-.62.14-.18.28-.7.9-.86 1.08-.16.18-.32.2-.6.07-.28-.14-1.18-.44-2.25-1.39-.83-.74-1.39-1.65-1.55-1.93-.16-.28-.02-.43.12-.57.12-.12.28-.32.42-.48.14-.16.18-.28.28-.46.1-.18.05-.34-.02-.48-.07-.14-.62-1.5-.85-2.05-.22-.54-.45-.47-.62-.48-.16-.01-.34-.01-.52-.01-.18 0-.48.07-.73.34-.25.28-.95.93-.95 2.27 0 1.34.98 2.64 1.12 2.82.14.18 1.93 2.94 4.68 4.12.65.28 1.16.45 1.56.58.65.21 1.24.18 1.71.11.52-.08 1.65-.67 1.88-1.32.23-.65.23-1.2.16-1.32-.07-.12-.25-.18-.53-.32z"
+                />
+              </svg>
+              pedir
+            </a>
+          </div>
+          <div class="pizza-card" onclick="orderPizza('Napoletana')">
+            <div class="card-image-container">
+              <img
+                src="https://via.placeholder.com/200x150?text=Napoletana"
+                alt="Napoletana"
+              />
+              <div class="favorite-icon">&#10084;</div>
+            </div>
+            <h3>Napoletana</h3>
+            <p>Jamón, aceituna, tomate, mozzarella</p>
+            <div class="price-rating">
+              <span class="price classic-price">$5.000</span>
+            </div>
+            <a
+              class="buy-button whatsapp"
+              href="https://wa.me/569888812341?text=Quiero%20pedir%20la%20pizza%20Napoletana%20con%20jamón%20aceituna%20tomate%20y%20mozzarella"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  d="M20.52 3.48A11.94 11.94 0 0012 0C5.373 0 0 5.373 0 12a11.94 11.94 0 001.64 6.01L0 24l6.09-1.59A11.94 11.94 0 0012 24c6.627 0 12-5.373 12-12 0-3.2-1.25-6.21-3.48-8.52zM12 21.5a9.5 9.5 0 01-4.84-1.39l-.35-.22-3.61.94.96-3.52-.23-.36A9.5 9.5 0 1121.5 12c0 5.24-4.26 9.5-9.5 9.5zm5.2-7.3c-.28-.14-1.65-.81-1.9-.9-.25-.1-.43-.14-.62.14-.18.28-.7.9-.86 1.08-.16.18-.32.2-.6.07-.28-.14-1.18-.44-2.25-1.39-.83-.74-1.39-1.65-1.55-1.93-.16-.28-.02-.43.12-.57.12-.12.28-.32.42-.48.14-.16.18-.28.28-.46.1-.18.05-.34-.02-.48-.07-.14-.62-1.5-.85-2.05-.22-.54-.45-.47-.62-.48-.16-.01-.34-.01-.52-.01-.18 0-.48.07-.73.34-.25.28-.95.93-.95 2.27 0 1.34.98 2.64 1.12 2.82.14.18 1.93 2.94 4.68 4.12.65.28 1.16.45 1.56.58.65.21 1.24.18 1.71.11.52-.08 1.65-.67 1.88-1.32.23-.65.23-1.2.16-1.32-.07-.12-.25-.18-.53-.32z"
+                />
+              </svg>
+              pedir
+            </a>
+          </div>
+          <div class="pizza-card" onclick="orderPizza('Jamón queso')">
+            <div class="card-image-container">
+              <img
+                src="https://via.placeholder.com/200x150?text=Jamón+queso"
+                alt="Jamón queso"
+              />
+              <div class="favorite-icon">&#10084;</div>
+            </div>
+            <h3>Jamón queso</h3>
+            <p>jamon, queso</p>
+            <div class="price-rating">
+              <span class="price classic-price">$5.000</span>
+            </div>
+            <a
+              class="buy-button whatsapp"
+              href="https://wa.me/569888812341?text=Quiero%20pedir%20la%20pizza%20Jamón%20queso%20con%20jamon%20y%20queso"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  d="M20.52 3.48A11.94 11.94 0 0012 0C5.373 0 0 5.373 0 12a11.94 11.94 0 001.64 6.01L0 24l6.09-1.59A11.94 11.94 0 0012 24c6.627 0 12-5.373 12-12 0-3.2-1.25-6.21-3.48-8.52zM12 21.5a9.5 9.5 0 01-4.84-1.39l-.35-.22-3.61.94.96-3.52-.23-.36A9.5 9.5 0 1121.5 12c0 5.24-4.26 9.5-9.5 9.5zm5.2-7.3c-.28-.14-1.65-.81-1.9-.9-.25-.1-.43-.14-.62.14-.18.28-.7.9-.86 1.08-.16.18-.32.2-.6.07-.28-.14-1.18-.44-2.25-1.39-.83-.74-1.39-1.65-1.55-1.93-.16-.28-.02-.43.12-.57.12-.12.28-.32.42-.48.14-.16.18-.28.28-.46.1-.18.05-.34-.02-.48-.07-.14-.62-1.5-.85-2.05-.22-.54-.45-.47-.62-.48-.16-.01-.34-.01-.52-.01-.18 0-.48.07-.73.34-.25.28-.95.93-.95 2.27 0 1.34.98 2.64 1.12 2.82.14.18 1.93 2.94 4.68 4.12.65.28 1.16.45 1.56.58.65.21 1.24.18 1.71.11.52-.08 1.65-.67 1.88-1.32.23-.65.23-1.2.16-1.32-.07-.12-.25-.18-.53-.32z"
+                />
+              </svg>
+              pedir
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="menu-section custom-pizza">
+        <h2 class="section-title">A ELECCIÓN</h2>
+        <p>1 SALSA + 1 QUESO + 1 PROTEÍNA + 3 INGREDIENTES</p>
+        <div
+          class="custom-options"
+          style="display: flex; gap: 1rem; flex-wrap: wrap"
+        >
+          <div class="custom-card" style="flex: 1 1 200px">
+            <h3>Elige tu salsa</h3>
+            <ul>
+              <li>Salsa blanca</li>
+              <li>Salsa roja</li>
+            </ul>
+          </div>
+          <div class="custom-card" style="flex: 1 1 200px">
+            <h3>Elige tu queso</h3>
+            <ul>
+              <li>Mozzarela</li>
+              <li>Sin lactosa</li>
+            </ul>
+          </div>
+          <div class="custom-card" style="flex: 1 1 200px">
+            <h3>Elige proteína</h3>
+            <ul>
+              <li>Pollo</li>
+              <li>Salame</li>
+              <li>Tocino</li>
+              <li>Jamón</li>
+              <li>Camarón</li>
+            </ul>
+          </div>
+          <div class="custom-card" style="flex: 1 1 200px">
+            <h3>Elige ingredientes</h3>
+            <ul>
+              <li>Tomate Cherry</li>
+              <li>Pimentón</li>
+              <li>Cebolla morada</li>
+              <li>Choclo</li>
+              <li>Albahaca</li>
+              <li>Aceitunas</li>
+              <li>Ajo confitado</li>
+              <li>Champiñon</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+      <footer>
+        <div class="instagram">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg"
+            alt="Instagram"
+            class="instagram-icon"
+          />
+          <span>@ELHORNITODEJULIETA</span>
+        </div>
+        <p>© 2024 Hornito de Julieta. Todos los derechos reservados.</p>
+      </footer>
+  </body>
+</html>
